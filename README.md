@@ -113,3 +113,18 @@ pipenv run jupyter notebook
 ```
 pipenv install <packages>
 ```
+
+## Transferring 
+
+### a file from remote to local 
+```scp myNewServer:/path/to/remote/source /path/to/local/destination/```
+
+### a file from local to remote
+```scp /path/to/local/source myNewServer:/path/to/remote/destination ```
+
+### a folder from local to remote (or multiple files)
+Option 1: zip the folder and then scp similar to a file
+Option 2: `scp -r /path/to/local/source myNewServer:/path/to/remote/destination`
+
+## Developing remotely outside of jupyter notebooks
+Ping me.. small bit of setup to do RemoteForwarding to hook your VS Code environment to the remote box. Giving you the feel that you are developing locally. 

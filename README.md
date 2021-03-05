@@ -62,7 +62,7 @@ cd ~/workspace/new-project
 13. Start your tmux session
 ```tmux```
 14. To change the name of your tmux window (Control + b then , ) type the new name and press enter
-15. Create project specific env([resource link](https://towardsdatascience.com/how-to-use-pipenv-with-jupyter-and-vscode-ae0e970df486#:~:text=Developing%20with%20Jupyter%20Notebook%20in%20the%20browser,-Jupyter%20Notebook%20in&text=Make%20sure%20to%20navigate%20into,afterward%20pipenv%20run%20jupyter%20notebook%20.)
+15. Create project specific env ([resource link](https://towardsdatascience.com/how-to-use-pipenv-with-jupyter-and-vscode-ae0e970df486#:~:text=Developing%20with%20Jupyter%20Notebook%20in%20the%20browser,-Jupyter%20Notebook%20in&text=Make%20sure%20to%20navigate%20into,afterward%20pipenv%20run%20jupyter%20notebook%20.))
 ```
 pipenv shell
 pipenv install jupyter

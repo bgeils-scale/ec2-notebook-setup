@@ -2,7 +2,7 @@
 
 The following setup allows you to develop and train models in on an ec2 instance, while developing in your native chrome browser. 
 
-## Setup
+## Setup (first time only)
 1. Navigate to Okta and open AWS, change your role to one which allows EC2 instance creation. 
 2. Create a new EC2 instance (I recommend Ubuntu 18 on a box that has a graphics card, this will depend on the size of your jobs, Step 4: Add storage - bump this up since the default is 8gb)
 3. Create a private key, or download the one provided during instance creation. 
@@ -89,11 +89,11 @@ pipenv run jupyter notebook
 6. Start your jupyter server `pipenv run jupyter notebook`
 7. Navigate to localhost:8001 in your browser and enter the token
 
-Installing packages in Jupyter
+## Installing packages in Jupyter
 1. In your jupyter notebook cell `! pipenv install <packages>`
 
 
-Installing packages in shell
+## Installing packages in shell
 1. Navigate to your project `cd ~/workspace/new-project`
 2. Activate your environment `pyenv shell`
 3. Install the packages

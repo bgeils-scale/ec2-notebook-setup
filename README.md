@@ -54,7 +54,9 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 Source your bash_profile
-```source ~/.bash_profile```
+```
+source ~/.bash_profile
+```
 10. Create a new python env - pick your own version I chose 3.8.0 (Resource link: https://towardsdatascience.com/managing-virtual-environment-with-pyenv-ae6f3fb835f8)
 ```
 mkdir envs

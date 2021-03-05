@@ -2,7 +2,8 @@
 
 The following setup allows you to develop and train models in on an ec2 instance, while developing in your native chrome browser. 
 
-![](./images/main.png | width=100)
+![main](images/main.png)
+
 ## Setup (first time only)
 1. Navigate to Okta and open AWS, change your role to one which allows EC2 instance creation. 
 2. Create a new EC2 instance (I recommend Ubuntu 18 on a box that has a graphics card, this will depend on the size of your jobs, Step 4: Add storage - bump this up since the default is 8gb)

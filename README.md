@@ -28,7 +28,14 @@ Host myNewServer
   User ubuntu
   LocalForward 8001 localhost:8888
 ```
-6. Login to your new EC2 box `ssh myNewServer` - press enter the first time when prompted with `Are you sure you want to continue connecting (yes/no/[fingerprint])?`
+6. Login to your new EC2 box 
+```
+ssh myNewServer
+```
+Press enter the first time when prompted with 
+```
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
 7. Install tmux (this is what keeps the jupyter notebook alive when you are gone)
 ```
 sudo apt update
@@ -75,7 +82,9 @@ mkdir ~/workspace/new-project
 cd ~/workspace/new-project
 ```
 13. Start your tmux session
-```tmux```
+```
+tmux
+```
 14. To change the name of your tmux window (Control + b then , ) type the new name and press enter
 15. Create project specific env ([resource link](https://towardsdatascience.com/how-to-use-pipenv-with-jupyter-and-vscode-ae0e970df486#:~:text=Developing%20with%20Jupyter%20Notebook%20in%20the%20browser,-Jupyter%20Notebook%20in&text=Make%20sure%20to%20navigate%20into,afterward%20pipenv%20run%20jupyter%20notebook%20.))
 ```

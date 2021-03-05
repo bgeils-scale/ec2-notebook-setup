@@ -1,6 +1,13 @@
 # ec2-notebook-setup
 
-The following setup allows you to develop and train models on an ec2 instance, while developing in your native chrome browser. The following allows for each project to have a separate python shell and differing package versions.
+The following setup allows you to develop and train models on an ec2 instance in your native chrome browser. 
+
+#### Why is this useful?
+- Access larger memory, storage and compute using AWS 
+- Your computer won't run slow when you have larger tasks running
+- Doesn't require you to develop locally and then execute remotely (everything is remote - but running in your local browser.. yay port forwarding)
+
+The setup allows for each project to have a separate python shell and differing package versions.
 - Project 1: python 3.8.0 with numpy version X 
 - Project 2: python 3.8.0 with numpy version Y
 - Project 3: python 3.7.5 with numpy version X
@@ -22,7 +29,7 @@ Host myNewServer
   LocalForward 8001 localhost:8888
 ```
 6. Login to your new EC2 box `ssh myNewServer` - press enter the first time when prompted with `Are you sure you want to continue connecting (yes/no/[fingerprint])?`
-7. Install tmux
+7. Install tmux (this is what keeps the jupyter notebook alive when you are gone)
 ```
 sudo apt update
 sudo apt install tmux

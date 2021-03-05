@@ -1,6 +1,9 @@
 # ec2-notebook-setup
 
-The following setup allows you to develop and train models in on an ec2 instance, while developing in your native chrome browser. 
+The following setup allows you to develop and train models on an ec2 instance, while developing in your native chrome browser. The following allows for each project to have a separate python shell and differing package versions.
+- Project 1: python 3.8.0 with numpy version X 
+- Project 2: python 3.8.0 with numpy version Y
+- Project 3: python 3.7.5 with numpy version X
 
 ![main](images/main.png)
 
@@ -9,7 +12,8 @@ The following setup allows you to develop and train models in on an ec2 instance
 2. Create a new EC2 instance (I recommend Ubuntu 18 on a box that has a graphics card, this will depend on the size of your jobs, Step 4: Add storage - bump this up since the default is 8gb)
 3. Create a private key, or download the one provided during instance creation. 
 4. Set the security permissions on the box (change the default inbound port 22 to 'My IP' - be aware you need to change this every time you change locations however it's an extra layer of security that is worth it)
-5. Set your `~/.ssh/config` as such. Replace Hostname and IdentityFile
+![main](images/my_ip.png)
+6. Set your `~/.ssh/config` as such. Replace Hostname and IdentityFile
 ```
 Host myNewServer
   Hostname ec2-3-129-217-106.us-east-2.compute.amazonaws.com
@@ -93,7 +97,7 @@ pipenv run jupyter notebook
 
 ## Installing packages in Jupyter
 1. In your jupyter notebook cell `! pipenv install <packages>`
-
+![main](images/numpy.png)
 
 ## Installing packages in shell
 1. Navigate to your project `cd ~/workspace/new-project`
